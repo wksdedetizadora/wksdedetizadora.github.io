@@ -1,1 +1,1 @@
-israel é lindo!
+is<b>ra</b>el é lindo!
