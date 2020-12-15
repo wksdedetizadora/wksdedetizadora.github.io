@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>WKS Dedetizadora</title>
+    <link href="https://wksdedetizadora.github.io/feed.xml" rel="self" />
+    <link href="https://wksdedetizadora.github.io" />
+    <updated>1969-12-31T21:00:00-03:00</updated>
+    <author>
+        <name>Israel Cerqueira</name>
+    </author>
+    <id>https://wksdedetizadora.github.io</id>
+
+</feed>

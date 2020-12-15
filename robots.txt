@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://wksdedetizadora.github.io/sitemap.xml
