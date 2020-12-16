@@ -1,14 +1,14 @@
 // Sticky menu
 var new_scroll_position = 0;
 var last_scroll_position;
-var header = document.getElementById("js-header");
+var header = document.getElementById("js-top");
 var stickyMenu = document.getElementById("js-navbar-menu");
 
 window.addEventListener('scroll', function (e) {
 	last_scroll_position = window.scrollY;
 
 	// Scrolling down
-	if (new_scroll_position < last_scroll_position && last_scroll_position > 40) {
+	if (new_scroll_position < last_scroll_position && last_scroll_position > 180) {
 		header.classList.remove("is-visible");
 		header.classList.add("is-hidden");
 
@@ -31,6 +31,7 @@ window.addEventListener('scroll', function (e) {
 
 	new_scroll_position = last_scroll_position;
 });
+
 
 // Dropdown menu
 (function (menuConfig) {
@@ -255,7 +256,7 @@ window.addEventListener('scroll', function (e) {
             menuOverlay.classList.toggle(config.hiddenElementClass);
             button.classList.toggle(config.openedMenuClass);
             button.setAttribute('aria-expanded', button.classList.contains(config.openedMenuClass));
-            document.documentElement.classList.add(config.noScrollClass);
+            document.documentElement.classList.toggle(config.noScrollClass);
         });
     }
 
@@ -344,25 +345,6 @@ window.addEventListener('scroll', function (e) {
     init();
 })(window.publiiThemeMenuConfig);
 
-// Load comments
-var comments = document.getElementById("js-comments");  
-   if (comments) {
-      comments.addEventListener("click", function() {   
-          comments.classList.toggle("is-hidden");      
-             var container = document.getElementById("js-comments__inner");   
-             container.classList.toggle("is-visible");  
-      });
- }
-
-// Load comments
-var comments = document.getElementById("js-comments");  
-   if (comments) {
-      comments.addEventListener("click", function() {   
-          comments.classList.toggle("is-hidden");      
-             var container = document.getElementById("js-comments__inner");   
-             container.classList.toggle("is-visible");  
-      });
- }
 
 // Load search input area
 var searchButton = document.querySelector(".js-search-btn");
@@ -382,6 +364,7 @@ if (searchButton) {
         searchOverlay.classList.remove('expanded');
     });
 }
+
 
 // Share buttons pop-up
 (function () {
@@ -446,8 +429,8 @@ if (searchButton) {
 // Back to Top - by CodyHouse.co on MIT license
 (function(){    
 	var backTop = document.getElementsByClassName('js-footer__bttop')[0],		
-		offset = 600,		
-		offsetOpacity = 1200,
+		offset = 400,		
+		offsetOpacity = 800,
 		scrollDuration = 50,
 		scrolling = false;
 	if( backTop ) {		
